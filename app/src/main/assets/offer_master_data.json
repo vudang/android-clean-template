@@ -1,0 +1,155 @@
+{
+  "subject_property": {
+    "title": "Subject property",
+    "summary_title": "Subject property",
+    "description": "",
+    "summary_description": "Address of the property you want to buy",
+    "sort": 1
+  },
+  "your_offer": {
+    "title": "Your offer",
+    "summary_title": "Your offer",
+    "description": "What is the price you agree to pay for this property?",
+    "summary_description": "Price you agree to pay for this property",
+    "sort": 2,
+    "occupancy_type_options": [
+      {
+        "title": "Primary Residence",
+        "value": "primary"
+      },
+      {
+        "title": "Secondary Residence",
+        "value": "secondary"
+      },
+      {
+        "title": "Investment Property",
+        "value": "investment"
+      }
+    ]
+  },
+  "co_buyer": {
+    "title": "Is there a Co-buyer?",
+    "summary_title": "Co-buyer information",
+    "description": "If another person will be sharing legal ownership of this property (spouse or partner, friend or relative, etc.), provide their information below ",
+    "summary_description": "Is a spouse/partner, relative, or friend sharing ownership of the property? ",
+    "sort": 3
+  },
+  "other_finance": {
+    "title": "Is this a cash offer?",
+    "summary_title": "Financing Terms",
+    "description": "How do you plan to finance this purchase?",
+    "summary_description": "Initial Deposit, Loan Amount, & Down Payment ",
+    "sort": 4
+  },
+  "pre_approval_letter": {
+    "title": "Do you have a preapproval letter?",
+    "summary_title": "Pre-approval letter",
+    "description": "Have you already been pre-approved for a loan?",
+    "summary_description": "Upload a current pre-approval letter from your lender.",
+    "sort": 5,
+    "loan_type_options": [
+      {
+        "title": "Conventional",
+        "value": "conventional"
+      },
+      {
+        "title": "FHA",
+        "value": "fha"
+      },
+      {
+        "title": "VA",
+        "value": "va"
+      },
+      {
+        "title": "Other",
+        "value": "other"
+      }
+    ],
+    "loan_rate_options": [
+      {
+        "title": "Fixed",
+        "value": "fixed"
+      },
+      {
+        "title": "Variable",
+        "value": "variable"
+      }
+    ]
+  },
+  "proof_of_funds": {
+    "title": "Proof of Funds",
+    "summary_title": "Proof of Funds",
+    "description": "Upload one or more current bank statements that show you have the funds to support your down payment or all cash offer, if applicable. It is recomended that all account numbers be removed or blacked-out. ",
+    "summary_description": "Upload one or more current bank statements",
+    "sort": 6
+  },
+  "contingencies": {
+    "title": "Is this a contingent sale?",
+    "summary_title": "Contingencies",
+    "description": "Do you need to sell one or more currently owned properties before you can purchase this property? ",
+    "summary_description": "Do you have to sell a property before you can buy? ",
+    "sort": 7
+  },
+  "close_of_escrow": {
+    "title": "Close of escrow",
+    "summary_title": "Close of escrow",
+    "description": "If your offer gets accepted, when would you want to close escrow?",
+    "summary_description": "When would you like this sale to be finalized?",
+    "sort": 8,
+    "day_range": [7, 180]
+  },
+  "include_items": {
+    "title": "Included items",
+    "summary_title": "Included items",
+    "description": "Check all items you would like to ask to be included in the sale. Note: all or some marked items may be countered by the seller.",
+    "summary_description": "Check all items you would like to ask to be included in the sale.",
+    "sort": 9,
+    "items": [
+      "Stove(s), oven(s), stove/oven combo(s)",
+      "Refrigerator(s)",
+      "Wine Refrigerator(s)",
+      "Washer(s)",
+      "Dryer(s)",
+      "Dishwasher(s)",
+      "Microwave(s)",
+      "Video doorbell(s)",
+      "Security camera equipment",
+      "Security system(s)/alarm(s), other than separate video doorbell and camera equipment",
+      "Smart home control devices",
+      "Wall mounted brackets for video or audio equipment",
+      "Above-ground pool(s)",
+      "Spa(s)",
+      "Bathroom mirrors",
+      "Electric car charging systems and stations",
+      "Potted trees/shrubs"
+    ]
+  },
+  "home_warranty": {
+    "title": "Home warranty",
+    "summary_title": "Home warranty",
+    "description": "A home warranty is a safeguard against unexpected repair costs for major systems and appliances in your home, offering convenience and financial protection for homeowners.",
+    "summary_description": "",
+    "sort": 10,
+    "amount": 650,
+    "is_include_warranty_options": [
+      {
+        "title": "Yes, not to exceed",
+        "value": true
+      },
+      {
+        "title": "No",
+        "value": false
+      }
+    ],
+    "purchaser_options": [
+      {
+        "title": "Buyer to purchase",
+        "value": "buyer"
+      },
+      {
+        "title": "Seller to purchase",
+        "value": "seller"
+      }
+    ]
+  }
+}
