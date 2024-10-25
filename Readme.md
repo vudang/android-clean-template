@@ -1,9 +1,9 @@
-# 1. Offeright Architecture
+# 1. Architecture
 ### a. Overview
 ![Diagram](Document/Architecture.png)
 
 ### b. Description
-#### Offeright adopts Clean Architecture with three layers:
+#### App adopts Clean Architecture with three layers:
 
 - `Presenter layer`: Responsible for managing the UI/UX of the application using the MVVM architecture.
 - `Domain layer`: Manages the business logic of the application.

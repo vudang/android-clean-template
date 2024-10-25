@@ -39,20 +39,17 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            buildConfigField("String", "API_BASE_URL", "\"https://api-dev.offeright.net/\"")
-            buildConfigField("String", "AWS_URL", "\"https://offeright-be-dev.s3.amazonaws.com/\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://api-dev.app.net/\"")
         }
         create("staging") {
             dimension = "environment"
             applicationIdSuffix = ".staging"
             versionNameSuffix = "-staging"
-            buildConfigField("String", "API_BASE_URL", "\"https://api-staging.offeright.net\"")
-            buildConfigField("String", "AWS_URL", "\"https://offeright-be-staging.s3.amazonaws.com/\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://api-staging.app.net\"")
         }
         create("prod") {
             dimension = "environment"
-            buildConfigField("String", "API_BASE_URL", "\"https://api.offeright.net\"")
-            buildConfigField("String", "AWS_URL", "\"https://offeright-be.s3.amazonaws.com/\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://api.app.net\"")
         }
     }
     compileOptions {
