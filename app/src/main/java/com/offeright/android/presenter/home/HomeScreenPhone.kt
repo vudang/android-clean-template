@@ -1,4 +1,4 @@
-package com.offeright.android.presenter.user_dashboard
+package com.offeright.android.presenter.home
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -15,7 +15,7 @@ import com.offeright.android.presenter.component.AppContainerView
 import com.offeright.android.util.Dimens
 
 @Composable
-fun UserDashboardScreenPhone(
+fun HomeScreenPhone(
     offerList: List<User>? = null,
     selectedOffer: (User) -> Unit
 ) {

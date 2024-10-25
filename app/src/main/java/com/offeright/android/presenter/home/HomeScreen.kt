@@ -1,4 +1,4 @@
-package com.offeright.android.presenter.user_dashboard
+package com.offeright.android.presenter.home
 
 import androidx.activity.compose.BackHandler
 //noinspection UsingMaterialAndMaterial3Libraries
@@ -20,10 +20,10 @@ import com.offeright.android.presenter.router.AppRouter
 import com.offeright.android.presenter.theme.AppColor
 
 @Composable
-fun UserDashboardScreen(
+fun HomeScreen(
     windowSize: WindowWidthSizeClass,
     router: AppRouter,
-    viewModel: UserDashboardViewModel = hiltViewModel()
+    viewModel: HomeViewModel = hiltViewModel()
 ) {
 
     val useDarkIcons = MaterialTheme.colors.isLight
@@ -50,7 +50,7 @@ fun UserDashboardScreen(
     })
 
     when(windowSize) {
-        WindowWidthSizeClass.Compact -> UserDashboardScreenPhone(
+        WindowWidthSizeClass.Compact -> HomeScreenPhone(
             selectedOffer = { offer ->
                 viewModel.selectUser(offer)
                 navigateToProfile()

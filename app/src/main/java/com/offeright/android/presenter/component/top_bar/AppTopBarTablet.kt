@@ -21,10 +21,6 @@ import com.offeright.android.util.Dimens
 @Composable
 fun AppTopBarTablet(
     modifier: Modifier,
-    userName: String = "",
-    favClick: () -> Unit = {},
-    notifyClick: () -> Unit = {},
-    profileClick: () -> Unit = {}
 ) {
     Row(
         modifier = modifier,
@@ -35,28 +31,6 @@ fun AppTopBarTablet(
             iconDrawable = R.drawable.ic_logo_dark_tablet
         )
         Spacer(modifier = Modifier.weight(1f))
-
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_notify,
-            onClick = notifyClick
-        )
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_love,
-            onClick = favClick
-        )
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_circle_fill,
-            onClick = profileClick
-        )
-        AppText(
-            rawText = userName,
-            color = AppColor.Dark,
-            weight = FontWeight.Bold,
-            size = Dimens.sp12
-        )
     }
 }
 
@@ -64,7 +38,6 @@ fun AppTopBarTablet(
 @Composable
 fun AppTopBarTabletPreview() {
     AppTopBarTablet(
-        userName = "Username1234",
         modifier = Modifier
             .fillMaxWidth()
     )

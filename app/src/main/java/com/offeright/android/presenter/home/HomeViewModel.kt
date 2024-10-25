@@ -1,4 +1,4 @@
-package com.offeright.android.presenter.user_dashboard
+package com.offeright.android.presenter.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class UserDashboardViewModel @Inject constructor(
+class HomeViewModel @Inject constructor(
     private val getUserDetailUseCase: GetUserDetailUseCase
 ) : ViewModel() {
 

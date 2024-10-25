@@ -16,26 +16,15 @@ import com.offeright.android.util.ScreenUtils.isTablet
 @Composable
 fun AppTopBar(
     modifier: Modifier,
-    userName: String = "",
-    favClick: () -> Unit = {},
-    notifyClick: () -> Unit = {},
-    profileClick: () -> Unit = {}
 ) {
     Box(contentAlignment = Alignment.BottomStart) {
         if (isTablet()) {
             AppTopBarTablet(
                 modifier = modifier,
-                userName = userName,
-                favClick = favClick,
-                notifyClick = notifyClick,
-                profileClick = profileClick
             )
         } else {
             AppTopBarPhone(
                 modifier = modifier,
-                favClick = favClick,
-                notifyClick = notifyClick,
-                profileClick = profileClick
             )
         }
         Divider(

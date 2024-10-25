@@ -7,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.offeright.android.presenter.router.AppRoute
 import com.offeright.android.presenter.router.AppRouter
 import com.offeright.android.presenter.router.appComposable
-import com.offeright.android.presenter.user_dashboard.UserDashboardScreen
+import com.offeright.android.presenter.home.HomeScreen
 import com.offeright.android.presenter.user_detail.UserDetailScreen
 
 /** Created by github.com/im-o on 10/28/2023. */
@@ -26,7 +26,7 @@ fun MainApp(
             )
         }
         appComposable(AppRoute.USER_DASHBOARD) {
-            UserDashboardScreen(
+            HomeScreen(
                 windowSize = windowSize,
                 router = appRouter
             )

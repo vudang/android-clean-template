@@ -22,9 +22,7 @@ import com.offeright.android.util.ScreenUtils.isTablet
 @Composable
 fun AppContainerView(
     modifier: Modifier = Modifier,
-    profileClick: () -> Unit = {},
     customTopBar: @Composable (() -> Unit)? = null,
-    customBottomBar: @Composable (() -> Unit)? = null,
     content: @Composable (PaddingValues) -> Unit
 ) {
     val bottomPadding = if(isTablet()) Dimens.dp30 else Dimens.dp0
@@ -34,7 +32,6 @@ fun AppContainerView(
             .systemBarsPadding(),
         topBar = {
             if (customTopBar != null) customTopBar() else AppTopBar(
-                profileClick = profileClick,
                 modifier = Modifier
                     .padding(start = Dimens.dp20)
                     .padding(end = Dimens.dp10)

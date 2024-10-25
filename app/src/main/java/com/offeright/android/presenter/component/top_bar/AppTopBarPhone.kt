@@ -18,12 +18,9 @@ import com.offeright.android.util.Dimens
 @Composable
 fun AppTopBarPhone(
     modifier: Modifier,
-    favClick: () -> Unit = {},
-    notifyClick: () -> Unit = {},
-    profileClick: () -> Unit = {}
 ) {
     Row(
-        modifier = modifier,
+        modifier = modifier.padding(vertical = Dimens.dp16),
         horizontalArrangement = Arrangement.spacedBy(Dimens.dp0),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -31,21 +28,6 @@ fun AppTopBarPhone(
             iconDrawable = R.drawable.ic_logo_dark_phone
         )
         Spacer(modifier = Modifier.weight(1f))
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_notify,
-            onClick = notifyClick
-        )
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_love,
-            onClick = favClick
-        )
-        AppButtonIcon(
-            modifier = Modifier.padding(),
-            iconDrawable = R.drawable.ic_circle_fill,
-            onClick = profileClick
-        )
     }
 }
 
